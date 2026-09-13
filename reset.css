@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, h1, h2, p, ul, li, div, header, main, footer, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
