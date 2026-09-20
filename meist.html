@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="et">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kingapood">
+  <meta name="author" content="">
+  <title>Kingapood</title>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Bootstrap ikoonid-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!--minu CSS-->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+<!-- Navigatsioon --->
+  <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand me-5" href="index.html">Kingapood</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdownNaised" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Naised</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownNaised">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdownMehed" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Mehed</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMehed">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meist.html">Meist</a>
+          </li>
+        </ul>
+
+        <!--Otsi vorm -->
+        <form class="d-flex me-1">
+          <div class="input-group">
+            <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
+            <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+          </div>
+        </form>
+      </div>
+      <div class="float-end">
+
+        <!--Login ikoon-->
+        <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
+
+        <!--Ostukorvi ikoon-->
+        <a class="btn btn-primary" href="ostukorv.html"><span class="bi bi-cart3"></span></a>
+
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="container">
+
+      <!--Teekond: näitab, kus lehel kasutaja parasjagu on-->
+      <nav aria-label="Teekond">
+        <ol class="breadcrumb my-4">
+          <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Meist</li>
+        </ol>
+      </nav>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-semibold text-primary-emphasis">Meist</h1>
+          <p class="fs-5 fw-light">Väike jalatsipood, mis on müünud nahksaapaid Tallinna vanalinnas 1998. aastast.</p>
+          <p>Alustasime ühe letiga Pika tänava keldrikorrusel. Tänaseks on meid kolmes linnas ja veebis, aga
+            valiku teeb ikka sama kolmeliikmeline ostumeeskond, kes käib kaks korda aastas Itaalia ja Portugali
+            töökodades kohapeal.</p>
+          <p>Me ei müü kõike. Riiulile jõuab aastas umbes nelikümmend mudelit, mille puhul teame, kes need õmbles
+            ja millisest nahast. Ülejäänu jätame teistele.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="img-fluid rounded-3" alt="Meie kauplus Tallinna vanalinnas">
+        </div>
+      </div>
+
+      <!--Nimekiri: lubadused, mida pood kliendile annab-->
+      <h2 class="h4 mt-5 mb-3">Mida me lubame</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex align-items-start">
+          <span class="bi bi-truck me-3"></span>
+          <div>
+            <p class="fw-semibold mb-1">Tarne 1-3 päevaga</p>
+            <p class="fw-light mb-0">Pakiautomaati üle 50 € ostu korral tasuta.</p>
+          </div>
+        </li>
+        <li class="list-group-item d-flex align-items-start">
+          <span class="bi bi-arrow-repeat me-3"></span>
+          <div>
+            <p class="fw-semibold mb-1">14 päeva vahetamiseks</p>
+            <p class="fw-light mb-0">Number ei sobinud? Vaheta poes või saada tagasi, põhjust küsimata.</p>
+          </div>
+        </li>
+        <li class="list-group-item d-flex align-items-start">
+          <span class="bi bi-tools me-3"></span>
+          <div>
+            <p class="fw-semibold mb-1">Parandame, mitte ei viska ära</p>
+            <p class="fw-light mb-0">Meie käest ostetud saapad taldistame töökojas kuni kolm korda.</p>
+          </div>
+        </li>
+      </ul>
+
+      <!--Tabel: kaupluste kontaktandmed-->
+      <h2 class="h4 mt-5 mb-3">Kauplused</h2>
+      <div class="table-responsive">
+        <table class="table table-striped align-middle">
+          <caption>Kaupluste lahtiolekuajad ja kontaktid</caption>
+          <thead>
+            <tr>
+              <th scope="col">Kauplus</th>
+              <th scope="col">Aadress</th>
+              <th scope="col">Telefon</th>
+              <th scope="col">Avatud</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Vanalinn</th>
+              <td>Pikk 12, Tallinn</td>
+              <td>+372 500 1234</td>
+              <td>E-R 10-19, L 10-16</td>
+            </tr>
+            <tr>
+              <th scope="row">Tartu kesklinn</th>
+              <td>Rüütli 8, Tartu</td>
+              <td>+372 500 1235</td>
+              <td>E-R 10-18, L 11-15</td>
+            </tr>
+            <tr>
+              <th scope="row">Pärnu</th>
+              <td>Rüütli 40, Pärnu</td>
+              <td>+372 500 1236</td>
+              <td>E-R 10-18</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-center mt-5">
+        <a class="btn btn-primary btn-lg" href="index.html" role="button">Vaata tooteid</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer bg-dark text-light mt-5 py-5" data-bs-theme="dark">
+    <div class="container">
+      <div class="row g-4">
+
+        <!--Pood ja lühitutvustus-->
+        <div class="col-md-4">
+          <h5 class="text-primary-emphasis">Kingapood</h5>
+          <p class="fw-light mb-0">Jalatsipood, mis on valminud Bootstrapi õppematerjali näitel. Kõik hinnad sisaldavad
+            käibemaksu.</p>
+        </div>
+
+        <!--Kontaktid-->
+        <div class="col-md-4">
+          <h5>Kontakt</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><span class="bi bi-geo-alt me-2"></span>Pikk 12, 10123 Tallinn</li>
+            <li class="mb-2"><a class="link-light" href="tel:+3725001234"><span
+                  class="bi bi-telephone me-2"></span>+372 500 1234</a></li>
+            <li class="mb-2"><a class="link-light" href="mailto:info@kingapood.ee"><span
+                  class="bi bi-envelope me-2"></span>info@kingapood.ee</a></li>
+            <li><span class="bi bi-clock me-2"></span>E-R 10-19, L 10-16</li>
+          </ul>
+        </div>
+
+        <!--Lingid ja sotsiaalvõrgustikud-->
+        <div class="col-md-4">
+          <h5>Lingid</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="link-light" href="index.html">Avaleht</a></li>
+            <li class="mb-2"><a class="link-light" href="meist.html">Meist</a></li>
+            <li><a class="link-light" href="ostukorv.html">Ostukorv</a></li>
+          </ul>
+          <h5 class="mt-4">Jälgi meid</h5>
+          <a class="link-light me-3" href="#" aria-label="Facebook"><span class="bi bi-facebook fs-4"></span></a>
+          <a class="link-light me-3" href="#" aria-label="Instagram"><span class="bi bi-instagram fs-4"></span></a>
+          <a class="link-light me-3" href="#" aria-label="YouTube"><span class="bi bi-youtube fs-4"></span></a>
+          <a class="link-light" href="#" aria-label="LinkedIn"><span class="bi bi-linkedin fs-4"></span></a>
+        </div>
+      </div>
+
+      <hr class="my-4">
+      <p class="text-center fw-light mb-0">&copy; 2025 Kingapood</p>
+    </div>
+  </footer>
+  
+  <!--Popper.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  
+  <!--Bootstrap.js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

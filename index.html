@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="et">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kingapood">
+  <meta name="author" content="">
+  <title>Kingapood</title>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Bootstrap ikoonid-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!--minu CSS-->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+<!-- Navigatsioon --->
+  <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand me-5" href="index.html">Kingapood</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdownNaised" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Naised</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownNaised">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdownMehed" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Mehed</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMehed">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meist.html">Meist</a>
+          </li>
+        </ul>
+
+        <!--Otsi vorm -->
+        <form class="d-flex me-1">
+          <div class="input-group">
+            <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
+            <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+          </div>
+        </form>
+      </div>
+      <div class="float-end">
+
+        <!--Login ikoon-->
+        <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
+
+        <!--Ostukorvi ikoon-->
+        <a class="btn btn-primary" href="ostukorv.html"><span class="bi bi-cart3"></span></a>
+
+      </div>
+    </div>
+  </nav>
+  
+  <!--Pildikarusell-->
+  <div class="container my-4">
+    <div id="avalehtKarusell" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#avalehtKarusell" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slaid 1"></button>
+        <button type="button" data-bs-target="#avalehtKarusell" data-bs-slide-to="1"
+          aria-label="Slaid 2"></button>
+        <button type="button" data-bs-target="#avalehtKarusell" data-bs-slide-to="2"
+          aria-label="Slaid 3"></button>
+      </div>
+      <div class="carousel-inner rounded-3">
+        <div class="carousel-item active">
+          <div class="ratio ratio-16x9">
+            <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="object-fit-cover" alt="Sügiskollektsiooni saapad">
+          </div>
+          <!--Karusellitekst on nähtav ainult suurtel ekraanidel (≥992px)-->
+          <div class="carousel-caption d-none d-lg-block">
+            <h2 class="fw-semibold">Sügiskollektsioon</h2>
+            <p>Uued nahksaapad on kohal. Tasuta tarne alates 50 €.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-16x9">
+            <img src="img/friikartuli-jalatsid.jpg" class="object-fit-cover" alt="Allahindluses kingad">
+          </div>
+          <div class="carousel-caption d-none d-lg-block">
+            <h2 class="fw-semibold">Kuni &minus;50%</h2>
+            <p>Eelmise hooaja mudelid on välja müügil.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-16x9">
+            <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="object-fit-cover" alt="Talvejalatsid">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#avalehtKarusell" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Eelmine</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#avalehtKarusell" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Järgmine</span>
+      </button>
+    </div>
+  </div>
+  
+  <!--Tooted avalehel kaartidena-->
+  <div class="container overflow-hidden">
+    <div class="row g-4 row justify-content-center">
+      <div class="col-xl-3 col-md-6">
+        <div class="card">
+          <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
+          <div class="card-body">
+            <h5 class="card-title text-primary-emphasis">Saapad 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
+              pretium lobortis.</p>
+            <a href="toode.html" class="btn btn-primary float-end">199 €</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="card">
+          <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
+          <div class="card-body">
+            <h5 class="card-title text-primary-emphasis">Saapad 2</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
+              pretium lobortis.</p>
+            <a href="#" class="btn btn-primary float-end"><s>149 €</s> 99 € </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="card">
+          <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
+          <div class="card-body">
+            <h5 class="card-title text-primary-emphasis">Saapad 3</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
+              pretium lobortis.</p>
+            <a href="#" class="btn btn-primary float-end"><s>159 €</s> 79 €</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3  col-md-6">
+        <div class="card">
+          <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
+          <div class="card-body">
+            <h5 class="card-title text-primary-emphasis">Saapad 4</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
+              pretium lobortis.</p>
+            <a href="#" class="btn btn-primary float-end"><s>129 €</s> 69 €</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer bg-dark text-light mt-5 py-5" data-bs-theme="dark">
+    <div class="container">
+      <div class="row g-4">
+
+        <!--Pood ja lühitutvustus-->
+        <div class="col-md-4">
+          <h5 class="text-primary-emphasis">Kingapood</h5>
+          <p class="fw-light mb-0">Jalatsipood, mis on valminud Bootstrapi õppematerjali näitel. Kõik hinnad sisaldavad
+            käibemaksu.</p>
+        </div>
+
+        <!--Kontaktid-->
+        <div class="col-md-4">
+          <h5>Kontakt</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><span class="bi bi-geo-alt me-2"></span>Pikk 12, 10123 Tallinn</li>
+            <li class="mb-2"><a class="link-light" href="tel:+3725001234"><span
+                  class="bi bi-telephone me-2"></span>+372 500 1234</a></li>
+            <li class="mb-2"><a class="link-light" href="mailto:info@kingapood.ee"><span
+                  class="bi bi-envelope me-2"></span>info@kingapood.ee</a></li>
+            <li><span class="bi bi-clock me-2"></span>E-R 10-19, L 10-16</li>
+          </ul>
+        </div>
+
+        <!--Lingid ja sotsiaalvõrgustikud-->
+        <div class="col-md-4">
+          <h5>Lingid</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="link-light" href="index.html">Avaleht</a></li>
+            <li class="mb-2"><a class="link-light" href="meist.html">Meist</a></li>
+            <li><a class="link-light" href="ostukorv.html">Ostukorv</a></li>
+          </ul>
+          <h5 class="mt-4">Jälgi meid</h5>
+          <a class="link-light me-3" href="#" aria-label="Facebook"><span class="bi bi-facebook fs-4"></span></a>
+          <a class="link-light me-3" href="#" aria-label="Instagram"><span class="bi bi-instagram fs-4"></span></a>
+          <a class="link-light me-3" href="#" aria-label="YouTube"><span class="bi bi-youtube fs-4"></span></a>
+          <a class="link-light" href="#" aria-label="LinkedIn"><span class="bi bi-linkedin fs-4"></span></a>
+        </div>
+      </div>
+
+      <hr class="my-4">
+      <p class="text-center fw-light mb-0">&copy; 2025 Kingapood</p>
+    </div>
+  </footer>
+  
+  <!--Popper.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  
+  <!--Bootstrap.js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
